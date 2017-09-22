@@ -1,3 +1,69 @@
+h1 {
+    font-size: 4.5rem;
+    padding:1rem;
+    color:#1E1E20;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+h2 {
+    font-size:3.75rem;
+    padding:1rem;
+    color:#1E1E20;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+p {
+    font-size: 2.2rem;
+    padding:1rem;
+    color:#1E1E20;
+    font-family: 'Roboto', sans-serif;
+
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.headshot {
+    height:100%;
+}
+.hscontainer {
+    height:20rem;
+    width:100%;
+    background-color:#2A2C2B;
+}
+nav {
+    background-color: #2A2C2B;
+    padding:1rem;
+}
+nav ul li {
+    margin-left:auto;
+    margin-right:auto;
+    width:90%;
+    text-align: center;
+    vertical-align: middle;
+    line-height:5rem;
+    height:5rem;
+    margin-top:2rem;
+    margin-bottom:2rem;
+    padding: 0.25rem;
+    border-radius: 2.5rem;
+    border-width: 5pt;
+    border-style:solid;
+    border-color: #ffffff;
+}
+footer {
+    position:relative;
+    width: 100vw;
+    background-color: #2A2C2B;
+    color: #fff;
+    bottom:0;
+}
+footer a {
+    /*color:#1E1E20;*/
+}
 @media (min-width: 400px) {
     
 }
@@ -7,9 +73,94 @@
 }
 
 @media (min-width: 750px) {
+    h1 { font-size:4rem;}
+    h2 { font-size:3.1rem;}
+    p { font-size:1.8rem}
+    .hscontainer {
+        float: left;
+        width:30%;
+        height:auto;
+        /*position: relative;*/
+    }
+    .headshot {
+        /*position: relative;*/
+        /*float: left;*/
+        width:100%;
+        height:auto;
+    }
+    header h1,h2,p{
+        float: left;
+        /*position: relative;*/
 
+    }
+    nav {
+        clear: both;
+        padding:10pt;
+    }
+    nav ul li {
+        font-size:2rem;
+        width:10rem;
+        display: inline-block;
+        border-width:3pt;
+        margin: 0 1rem 0 0;
+        border-radius:10pt;
+    }
+    footer {
+        position: relative;
+        clear: both;
+    }
 }
 
 @media (min-width: 1000px) {
+    h1,h2,p {
+        clear: both;
+    }
+    h1 {
+        font-size: 2.8rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .container {
+        position: relative;
+        margin-top:3rem;
+        min-height:100vh;
+    }
+    header {
+        /*height:400pt;*/
+        /*top:3rem;*/
+        position: relative;
+    }
+    .about {
+        float: left;
+    }
+    .hscontainer {
+        width:11rem;
 
+    }
+    nav {
+        height:2.1rem;
+        top:0;
+        width:100%;
+        position: fixed;
+        padding: 0.5rem;
+    }
+    nav ul li {
+        height:2.1rem;
+        border-width:1.4pt;
+        line-height: 2.5rem;
+        font-size:1.4rem;
+        border-radius:0;
+        padding:0;
+    }
+    footer {
+        width:100vw;
+        height:5rem;
+        clear: both;
+        position: absolute;
+        bottom:0;
+    }
 }
